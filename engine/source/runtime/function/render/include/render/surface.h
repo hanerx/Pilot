@@ -50,7 +50,7 @@ namespace Pilot
     class Surface
     {
     public:
-        Surface(PilotRenderer* prenderer, const char* title = "Pilot", uint32_t width = 1280, uint32_t height = 768) :
+        Surface(PilotRenderer* prenderer, const char* title = "Pilot-HanerxBuildVersion", uint32_t width = 1280, uint32_t height = 768) :
             m_io(std::make_shared<SurfaceIO>(title, width, height)), m_rhi(std::make_shared<SurfaceRHI>(prenderer)),
             m_render(prenderer)
         {}

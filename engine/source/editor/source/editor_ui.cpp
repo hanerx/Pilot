@@ -352,6 +352,16 @@ namespace Pilot
                 }
                 ImGui::EndMenu();
             }
+            if(ImGui::BeginMenu("About"))
+            {
+                if(ImGui::MenuItem("Author:BoomingTech"))
+                {
+                    
+                }
+                ImGui::MenuItem("Modifer:Hanerx");
+                ImGui::MenuItem("Git:https://github.com/hanerx/Pilot");
+                ImGui::EndMenu();
+            }
             ImGui::EndMenuBar();
         }
 
