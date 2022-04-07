@@ -8,6 +8,13 @@
 
 **Pilot Engine** is a tiny game engine used for the [GAMES104](https://games104.boomingtech.com) course.
 
+## Continuous build status    
+    
+Build Type | Status  
+:-: | :-:  
+**Build Linux** | [![Build Linux](https://github.com/BoomingTech/Pilot/actions/workflows/build_linux.yml/badge.svg)](https://github.com/BoomingTech/Pilot/actions/workflows/build_linux.yml)  
+**Build macOS** | [![Build macOS](https://github.com/BoomingTech/Pilot/actions/workflows/build_macos.yml/badge.svg)](https://github.com/BoomingTech/Pilot/actions/workflows/build_macos.yml)  
+
 ## Prerequisites
 
 To build Pilot, you must first install the following tools.
@@ -17,7 +24,7 @@ To build Pilot, you must first install the following tools.
 - CMake 3.19 (or more recent)
 - Git 2.1 (or more recent)
 
-### MacOS >= 10.15 (x86_64)
+### macOS >= 10.15 (x86_64)
 - Xcode 12.3 (or more recent)
 - CMake 3.19 (or more recent)
 - Git 2.1 (or more recent)
@@ -25,11 +32,19 @@ To build Pilot, you must first install the following tools.
 ### Ubuntu 20.04
  - apt install the following packages
 ```
-sudo apt install git
+sudo apt install libxrandr-dev
+sudo apt install libxrender-dev
+sudo apt install libxinerama-dev
+sudo apt install libxcursor-dev
+sudo apt install libxi-dev
+sudo apt install libglvnd-dev
+sudo apt install libvulkan-dev
 sudo apt install cmake
 sudo apt install clang
-sudo apt install libxcb1-dev
-sudo apt install libvulkan-dev
+sudo apt install libc++-dev
+sudo apt install libglew-dev
+sudo apt install libglfw3-dev
+sudo apt install libtbb-dev
 sudo apt install vulkan-validationlayers
 sudo apt install mesa-vulkan-drivers
 ```  
@@ -45,7 +60,7 @@ Or you can use the following command to generate the **Visual Studio** project f
 cmake -S engine/ -B build
 ```
 
-### Build on MacOS
+### Build on macOS
 
 > The following build instructions only tested on specific hardware of x86_64, and do not support M1 chips. For M1 compatible, we will release later.
 
@@ -61,5 +76,5 @@ cmake --build build --config Release
 ```
 
 ### Build on Ubuntu 20.04 
-You can execute the **build_linux.sh** to build the binaries.  
-  
+You can execute the **build_linux.sh** to build the binaries.
+
