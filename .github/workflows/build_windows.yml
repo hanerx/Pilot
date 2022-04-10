@@ -1,4 +1,4 @@
-name: Build macOS
+name: Build Windows
 
 on:
   push:
@@ -8,7 +8,8 @@ on:
 
 jobs:
   build:
-    runs-on: macos-latest
+    # windows 10 with latest image
+    runs-on: windows-latest
     strategy:
       matrix:
         configuration: [debug, release]
@@ -16,6 +17,6 @@ jobs:
       - uses: actions/checkout@v2
         with:
           submodules: 'true'
-
+        
       - name: Build
-        run: ./build_macos.sh ${{matrix.configuration}}
+        run: ./build_windows.bat ${{matrix.configuration}} 
