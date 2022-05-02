@@ -45,7 +45,6 @@ sudo apt install clang
 sudo apt install libc++-dev
 sudo apt install libglew-dev
 sudo apt install libglfw3-dev
-sudo apt install libtbb-dev
 sudo apt install vulkan-validationlayers
 sudo apt install mesa-vulkan-drivers
 ```
@@ -80,3 +79,6 @@ Or you can execute the **build_macos.sh** to build the binaries.
 
 ### Build on Ubuntu 20.04
 You can execute the **build_linux.sh** to build the binaries.
+
+### Documentation
+For documentation, please refer to the Wiki section.
