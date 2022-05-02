@@ -387,7 +387,10 @@ namespace Pilot
                     
                 }
                 ImGui::MenuItem("Modifer:Hanerx");
-                ImGui::MenuItem("Git:https://github.com/hanerx/Pilot");
+                if(ImGui::MenuItem("Git:https://github.com/hanerx/Pilot"))
+                {
+                    std::system("start https://github.com/hanerx/Pilot");
+                }
                 ImGui::EndMenu();
             }
             ImGui::EndMenuBar();
