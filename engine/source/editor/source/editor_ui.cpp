@@ -331,6 +331,8 @@ namespace Pilot
                 ImGui::MenuItem("Game", nullptr, &m_game_engine_window_open);
                 ImGui::MenuItem("File Content", nullptr, &m_file_content_window_open);
                 ImGui::MenuItem("Detail", nullptr, &m_detail_window_open);
+                ImGui::EndMenu();
+            }
             if(ImGui::BeginMenu("About"))
             {
                 if(ImGui::MenuItem("Author:BoomingTech"))
@@ -346,7 +348,6 @@ namespace Pilot
             }
             ImGui::EndMenuBar();
         }
-
         ImGui::End();
     }
 
